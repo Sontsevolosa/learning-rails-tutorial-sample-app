@@ -8,7 +8,8 @@ gem 'bcrypt', '3.1.7'
 
 gem 'bootstrap-sass', '3.2.0.0'
 
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', '0.18.1', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,7 +56,4 @@ group :test do
 	gem 'guard-minitest', '2.3.1'
 end
 
-group :production do
-	gem 'pg'
-	gem 'rails_12factor'
-end
+gem 'rails_12factor', group: :production

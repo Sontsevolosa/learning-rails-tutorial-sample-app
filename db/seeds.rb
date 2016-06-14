@@ -38,4 +38,4 @@ user = users.first
 following = users[2..50]
 followers = [3..40]
 following.each { |followed| user.follow(followed) }
-followers.each { |follower| folower.follow(user) }
+followers.each { |follower| follower.follow(user) }
